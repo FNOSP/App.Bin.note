@@ -1,0 +1,2 @@
+note.fpk filter=lfs diff=lfs merge=lfs -text
+app/server/note filter=lfs diff=lfs merge=lfs -text
