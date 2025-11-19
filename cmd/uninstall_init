@@ -1,0 +1,18 @@
+#!/bin/bash
+
+### This script is called after the user uninstalls the application.
+# 获取用户在向导中的选择
+TYPE="$wizard_data_action"
+
+# 根据用户选择执行相应逻辑
+if [ "$TYPE" = "delete" ]; then
+    echo "删除便签数据库 Sqlite 数据中..."
+    rm -rf ${TRIM_PKGHOME}/data/
+    echo "数据库 ${TRIM_PKGHOME}/data/ 删除成功"
+
+    echo "删除便签上传目录 uploads 数据中..."
+    rm -rf ${TRIM_PKGHOME}/uploads/
+    echo "上传目录 ${TRIM_PKGHOME}/uploads/ 删除成功"
+fi
+
+exit 0
