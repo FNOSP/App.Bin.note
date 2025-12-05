@@ -132,7 +132,7 @@ sudo appcenter-cli start note
 ![设置页](docs/1.0.0/10.png)<br/>
 
 ## CGI转发代码
-### index.cgi
+### index.cgi 构建：go build -trimpath -o index.cgi cgi.go
 ```go
 package main
 
