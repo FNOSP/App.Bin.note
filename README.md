@@ -130,3 +130,250 @@ sudo appcenter-cli start note
 ![首页展示绘画图](docs/1.0.0/9.png)<br/>
 
 ![设置页](docs/1.0.0/10.png)<br/>
+
+## CGI转发代码
+### index.cgi
+```go
+package main
+
+import (
+	"bytes"
+	"fmt"
+	"io"
+	"mime"
+	"net/http"
+	"os"
+	"path/filepath"
+	"strings"
+)
+
+const backendURL = "http://127.0.0.1:10030" // 后端接口地址
+const debugMode = false                     // true = 开启调试
+
+func main() {
+	cwd, _ := os.Getwd()
+	path := os.Getenv("REQUEST_URI")
+
+	// Debug 调试模式
+	if debugMode {
+		debugOutput("路径调试", map[string]string{
+			"REQUEST_URI": path,
+		})
+		return
+	}
+
+	// 1. 规范化路径
+	path = normalizePath(path)
+
+	// 2. API 请求优先
+	if isAPIRequest(path) {
+		proxyToBackend(path)
+		return
+	}
+
+	// 3. 静态文件服务
+	if serveStaticFile(cwd, path) {
+		return
+	}
+
+	// 4. fallback index.html
+	serveIndexHTML(cwd)
+}
+
+/* ================================
+ * 路径处理
+ * ================================
+ */
+// 规范化路径
+func normalizePath(path string) string {
+	if path == "" {
+		return "/index.html"
+	}
+
+	// 提取 index.cgi 后面的路径
+	if strings.Contains(path, "index.cgi/") {
+		return "/" + strings.SplitN(path, "index.cgi/", 2)[1]
+	}
+
+	// 访问 index.cgi 本体 → 返回首页
+	if strings.HasSuffix(path, "index.cgi") {
+		return "/index.html"
+	}
+
+	return path
+}
+
+/* ================================
+ * 静态文件服务
+ * ================================
+ */
+func serveStaticFile(cwd, path string) bool {
+	var filePath string
+
+	// uploads 特殊存储
+	if strings.HasPrefix(path, "/uploads/") {
+		filePath = filepath.Join(cwd, "../../../@apphome/note/", path)
+	} else {
+		filePath = filepath.Join(cwd, path)
+	}
+
+	if _, err := os.Stat(filePath); err != nil {
+		return false
+	}
+
+	file, err := os.Open(filePath)
+	if err != nil {
+		outputError(404, err)
+		return true
+	}
+	defer file.Close()
+
+	contentType := getContentType(filePath)
+	fmt.Println("Status: 200 OK")
+	fmt.Printf("Content-Type: %s\r\n\r\n", contentType)
+	io.Copy(os.Stdout, file)
+	return true
+}
+
+// fallback index.html
+func serveIndexHTML(cwd string) {
+	filePath := filepath.Join(cwd, "index.html")
+	file, err := os.Open(filePath)
+	if err != nil {
+		outputError(404, err)
+		return
+	}
+	defer file.Close()
+
+	fmt.Println("Status: 200 OK")
+	fmt.Println("Content-Type: text/html\r\n")
+	io.Copy(os.Stdout, file)
+}
+
+/* ================================
+ * 判断是否是 API 请求
+ * ================================
+ */
+func isAPIRequest(path string) bool {
+	return strings.HasPrefix(path, "/admin/") ||
+		strings.HasPrefix(path, "/app/")
+}
+
+/* ================================
+ * Content-Type 管理
+ * ================================
+ */
+// getContentType 自动识别文件类型
+func getContentType(filePath string) string {
+	ext := strings.ToLower(filepath.Ext(filePath))
+	if ext == "" {
+		return "application/octet-stream"
+	}
+
+	// 尝试通过系统 MIME 表识别
+	mimeType := mime.TypeByExtension(ext)
+	if mimeType != "" {
+		return mimeType
+	}
+
+	// 默认二进制流
+	return "application/octet-stream"
+}
+
+/* ================================
+ * 后端代理
+ * ================================
+ */
+func proxyToBackend(path string) {
+	method := os.Getenv("REQUEST_METHOD")
+	if method == "" {
+		method = "GET"
+	}
+
+	var body []byte
+	if method != "GET" && method != "HEAD" {
+		body, _ = io.ReadAll(os.Stdin)
+	}
+
+	targetURL := backendURL + path
+	req, err := http.NewRequest(method, targetURL, bytes.NewReader(body))
+	if err != nil {
+		outputError(500, err)
+		return
+	}
+
+	copyHeaders(req)
+
+	client := &http.Client{}
+	resp, err := client.Do(req)
+	if err != nil {
+		outputError(502, err)
+		return
+	}
+	defer resp.Body.Close()
+
+	fmt.Printf("Status: %d OK\r\n", resp.StatusCode)
+	for k, vs := range resp.Header {
+		fmt.Printf("%s: %s\n", k, strings.Join(vs, ","))
+	}
+	fmt.Println()
+
+	io.Copy(os.Stdout, resp.Body)
+}
+
+// 复制 CGI 的请求头
+func copyHeaders(req *http.Request) {
+	for _, env := range os.Environ() {
+		if strings.HasPrefix(env, "HTTP_") {
+			parts := strings.SplitN(env, "=", 2)
+			key := strings.ReplaceAll(parts[0][5:], "_", "-")
+			req.Header.Set(key, parts[1])
+		}
+	}
+
+	if ip := os.Getenv("X-Real-IP"); ip != "" {
+		req.Header.Set("X-Real-IP", ip)
+		req.Header.Set("X-Forwarded-For", ip)
+	}
+}
+
+/* ================================
+ * 工具方法
+ * ================================
+ */
+// 错误输出
+func outputError(code int, err error) {
+	fmt.Printf("Status: %d Error\r\n", code)
+	fmt.Println("Content-Type: text/plain\r\n")
+	fmt.Println("CGI Error:")
+	fmt.Println(err)
+}
+
+// Debug 输出
+func debugOutput(title string, items map[string]string) {
+	fmt.Println("Status: 200 OK")
+	fmt.Println("Content-Type: text/plain; charset=utf-8\r\n")
+
+	fmt.Println("====== DEBUG MODE ======")
+	fmt.Println("INFO:", title)
+	fmt.Println("-------------------------")
+
+	for k, v := range items {
+		fmt.Printf("%s: %s\n", k, v)
+	}
+
+	if os.Getenv("REQUEST_METHOD") != "GET" {
+		body, _ := io.ReadAll(os.Stdin)
+		fmt.Println("\n====== BODY ======")
+		fmt.Println(string(body))
+	}
+
+	fmt.Println("\n====== ENV ======")
+	for _, env := range os.Environ() {
+		fmt.Println(env)
+	}
+
+	fmt.Println("\n====== END ======")
+}
+
+```
