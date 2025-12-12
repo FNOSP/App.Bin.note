@@ -5,7 +5,7 @@ desc                  = <p>一款简洁高效的 <b><i>便签</i></b> 应用，�
 arch                  = x86_64
 source                = thirdparty
 maintainer            = 左平
-maintainer_url        = https://github.com/FNOSP/App.Bin.note
+maintainer_url        = https://club.fnnas.com/forum.php?mod=viewthread&tid=45704
 distributor           = 左平
 distributor_url       = https://club.fnnas.com/forum.php?mod=viewthread&tid=45704
 desktop_uidir         = ui
