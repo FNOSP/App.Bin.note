@@ -88,7 +88,7 @@ sudo appcenter-cli start note
 
 ![便签绘画类型](docs/1.0.5/1.png)<br/>
 ![便签绘画类型首页](docs/1.0.5/2.png)<br/>
-![标签功能](docs/1.0.5/1.png)<br/>
+![标签功能](docs/1.0.5/3.png)<br/>
 ## 2025-12-2
 ### 1.0.2<br/>
 1.新增暗模式<br/>
