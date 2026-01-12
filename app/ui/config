@@ -7,9 +7,7 @@
             "url": "/cgi/ThirdParty/note/index.cgi",
             "allUsers": true,
             "control": {
-              "accessPerm": "editable",
-              "portPerm": "readonly",
-              "pathPerm": "readonly"
+              "accessPerm": "editable"
             }
         }
     }
