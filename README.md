@@ -52,9 +52,8 @@ sudo fnpack build && sudo appcenter-cli install-local note.fpk
 > https://club.fnnas.com/forum.php?mod=viewthread&tid=45704
 
 ## 安装
-> 先下载 note.fpk 文件，然后在应用中心手动安装
-
-![登录页](docs/1.0.0/app_center_install_fpk.jpg)<br/>
+> 先下载 note.fpk 文件，然后在应用中心手动安装 <br/><br/>
+> ![登录页](docs/1.0.0/app_center_install_fpk.jpg)<br/>
 
 ## 新窗口打开方式
 > 如果需要单独打开，你的 NAS 访问地址 + /cgi/ThirdParty/note/index.cgi 打开。<br/>
@@ -62,8 +61,7 @@ sudo fnpack build && sudo appcenter-cli install-local note.fpk
 
 ## 便签数据备份
 > 1. 使用飞牛 备份 应用备份，打开备份->备份飞牛->选择目录（应用安装的存储空间->@apphome/note）->下一步->选择备份目的地... 
-> 2. note 目录下的两个文件夹 data 和 uploads 分别是 SQLite 数据库文件夹 和 上传文件文件夹
-
+> 2. note 目录下的两个文件夹 data 和 uploads 分别是 SQLite 数据库文件夹 和 上传文件文件夹<br/><br/>
 > ![备份便签数据](docs/1.0.2/3.jpg)<br/>
 > ![备份便签数据](docs/1.0.2/4.jpg)<br/>
 
