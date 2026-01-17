@@ -1,26 +1,18 @@
 # App.Bin.note
 
-应用包名：note
-
-显示名称：便签
-
-版本：1.0.8
-
-发布者：左平
-
-占用端口： 10030
-
-前端开发：Vue3 + Element-Plus
-
-后端开发：Go + Gin
-
-数据库： Sqlite
-
-浏览器：推荐最新版谷歌浏览器或把浏览器升级到最新版本运行
+> 应用包名：note <br/>
+> 显示名称：便签 <br/>
+> 版本：1.0.8 <br/>
+> 发布者：左平 <br/>
+> 占用端口： 10030 <br/>
+> 前端开发：Vue3 + Element-Plus <br/>
+> 后端开发：Go + Gin <br/>
+> 数据库： Sqlite <br/>
+> 浏览器：推荐最新版谷歌浏览器或把浏览器升级到最新版本运行
 
 ## 应用说明
 
-一款简洁好用的便签应用，自适应网页，支持 PC 、平板、移动端放访问。 <br/>
+> 一款简洁好用的便签应用，自适应网页，支持 PC 、平板、移动端放访问。 <br/>
 应用支持多账号登录，每个账号都能有自己的数据空间。<br/>
 支持多类型的便签，<br/>
 &nbsp;1.常规便签：<br/>
@@ -38,7 +30,7 @@
 ## 应用状态
 > 迭代中
 
-> 下一版支持功能：（构想）
+> 下一版支持功能：
 
 > 便签拍照类型、录音类型、附件类型、位置类型、密码本类型
 
@@ -57,15 +49,16 @@ sudo fnpack build && sudo appcenter-cli install-local note.fpk
 ```
 
 ## 飞牛论坛交流帖
-https://club.fnnas.com/forum.php?mod=viewthread&tid=45704
+> https://club.fnnas.com/forum.php?mod=viewthread&tid=45704
 
 ## 安装
-#### 先下载 note.fpk 文件，然后在应用中心手动安装
+> 先下载 note.fpk 文件，然后在应用中心手动安装
+
 ![登录页](docs/1.0.0/app_center_install_fpk.jpg)<br/>
 
 ## 新窗口打开方式
-#### 如果需要单独打开，你的 NAS 访问地址 + /cgi/ThirdParty/note/index.cgi 打开。
-#### 需要先登录 NAS<br/>比如：http://192.168.31.111:5666/cgi/ThirdParty/note/index.cgi
+> 如果需要单独打开，你的 NAS 访问地址 + /cgi/ThirdParty/note/index.cgi 打开。<br/>
+> 需要先登录 NAS<br/>比如：http://192.168.31.111:5666/cgi/ThirdParty/note/index.cgi
 
 ## 便签数据备份
 > #### 1. 使用飞牛 备份 应用备份，打开备份->备份飞牛->选择目录（应用安装的存储空间->@apphome/note）->下一步->选择备份目的地... 
