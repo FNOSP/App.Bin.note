@@ -5,7 +5,7 @@ PID_FILE="${TRIM_PKGVAR}/app.pid"
 
 # write the command to start your program here
 # CMD="${TRIM_APPDEST}/server/note -port=${TRIM_SERVICE_PORT} -data-path=${TRIM_PKGHOME}"
-CMD="${TRIM_APPDEST}/server/note -data-path=${TRIM_PKGHOME} -data-share-paths=${TRIM_DATA_ACCESSIBLE_PATHS}"
+CMD="${TRIM_APPDEST}/server/note -data-path=${TRIM_PKGHOME} -data-share-paths=${TRIM_DATA_ACCESSIBLE_PATHS} -data-version=${TRIM_APPVER}"
 
 log_msg() {
     echo "$(date '+%Y-%m-%d %H:%M:%S') - $1" >> ${LOG_FILE}
