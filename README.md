@@ -53,23 +53,19 @@
 > 请提前安装好 fnpack
 
 ```bash
-fnpack build
+sudo fnpack build && sudo appcenter-cli install-local note.fpk
 ```
 
-## 飞牛论坛帖子
+## 飞牛论坛交流帖
 https://club.fnnas.com/forum.php?mod=viewthread&tid=45704
 
 ## 安装
-### 1. 命令安装
-```bash
-sudo rm -f note.fpk && sudo fnpack build && sudo appcenter-cli install-local note.fpk
-```
-### 2. 应用中心安装
+#### 先下载 note.fpk 文件，然后在应用中心手动安装
 ![登录页](docs/1.0.0/app_center_install_fpk.jpg)<br/>
 
-## CGI 打开方式
-> /cgi/ThirdParty/note/index.cgi
-#### 如果需要单独打开，你的 NAS 访问地址 + CGI 打开方式。需要先登录 NAS<br/>比如：http://192.168.31.111:5666/cgi/ThirdParty/note/index.cgi
+## 新窗口打开方式
+#### 如果需要单独打开，你的 NAS 访问地址 + /cgi/ThirdParty/note/index.cgi 打开。
+#### 需要先登录 NAS<br/>比如：http://192.168.31.111:5666/cgi/ThirdParty/note/index.cgi
 
 ## 便签数据备份
 > #### 1. 使用飞牛 备份 应用备份，打开备份->备份飞牛->选择目录（应用安装的存储空间->@apphome/note）->下一步->选择备份目的地... 
