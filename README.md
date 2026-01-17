@@ -67,7 +67,7 @@ sudo fnpack build && sudo appcenter-cli install-local note.fpk
 > ![备份便签数据](docs/1.0.2/3.jpg)<br/>
 > ![备份便签数据](docs/1.0.2/4.jpg)<br/>
 
-- ### 功能图片
+### 功能图片
 > ![登录页](docs/1.0.0/0.png)<br/>
 > ![登录页](docs/1.0.0/1.png)<br/>
 > ![首页](docs/1.0.0/2.png)<br/>
