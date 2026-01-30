@@ -7,6 +7,7 @@
 > 占用端口： 10030 <br/>
 > 前端开发：Vue3 + Element-Plus <br/>
 > 后端开发：Go + Gin <br/>
+> 移动端：UniApp <br/>
 > 数据库： Sqlite <br/>
 > 浏览器：推荐最新版谷歌浏览器或把浏览器升级到最新版本运行
 
