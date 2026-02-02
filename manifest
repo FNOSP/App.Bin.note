@@ -14,7 +14,7 @@ desc                  = """
 <p><font color="green">3.思维导图便签：</font><br/>嵌入思维导图开源组件到系统中</p>
 <p><font color="green">4.拍照类型便签：</font><br/>可以把你拍照中最喜欢的几张图片保存到这里</p>
 <p><font color="green">5.录音类型便签：</font><br/>可以把你觉得有必要的音频保存到这里</p>
-<p><font color="green">6.附件类型便签：</font><br/>归类保存你的附件文件</p>
+<p><font color="green">6.附件类型便签：</font><br/>一些特别的附件文件保存到这里</p>
 <p><font color="green">7.位置类型：</font><br/>使用腾讯地图绘制记录你的位置轨迹</p>
 <p><font color="green">8.密码本类型：</font><br/>使用 AES-256-GCM 算法加密你的密码本内容，支持多个平台的账号保存</p>
 <p>它可以帮助你记录生活、工作和灵感。</p>
