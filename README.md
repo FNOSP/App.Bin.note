@@ -23,12 +23,14 @@
 &nbsp;3.思维导图便签：<br/>
     &nbsp;&nbsp;&nbsp;&nbsp;嵌入那款最火的思维导图开源组件到系统中<br/>
 &nbsp;4.拍照类型：<br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;可以把你拍照中最稀罕的几张图片保存到这里,轮播播放、列表、多宫格展示<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;可以把你拍照中最喜欢的几张图片保存到这里,轮播播放、列表、多宫格展示<br/>
 &nbsp;5.录音类型：<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;可以把你的需要单独保存的录音保存到这里，支持播放和可视化<br/>
-&nbsp;6.位置类型：<br/>
+&nbsp;6.附件类型便签：<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;一些特别的附件文件保存到这里<br/>
+&nbsp;7.位置类型：<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;使用腾讯地图绘制记录你的位置轨迹<br/>
-&nbsp;7.密码本类型：<br/>
+&nbsp;8.密码本类型：<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;使用 AES-256-GCM 算法加密你的密码本内容，支持多个平台的账号保存<br/>
 它可以帮助你记录生活、工作和灵感。<br/>
 默认账号：<b>admin</b> 密码：<b>123456</b>
@@ -67,6 +69,7 @@ sudo fnpack build && sudo appcenter-cli install-local note.fpk
 ### 功能图片
 > ![登录页](docs/1.0.0/0.png)<br/>
 > ![首页](docs/1.0.0/2.png)<br/>
+> ![便签类型](docs/1.0.8/2.png)<br/>
 > ![首页详情](docs/1.0.0/3.png)<br/>
 > ![移动端打开的详情页](docs/1.0.0/4.png)<br/>
 > ![首页详情页](docs/1.0.0/5.png)<br/>
@@ -74,4 +77,5 @@ sudo fnpack build && sudo appcenter-cli install-local note.fpk
 > ![首页编辑模式绘画](docs/1.0.0/7.png)<br/>
 > ![添加便签页](docs/1.0.0/8.png)<br/>
 > ![首页展示绘画图](docs/1.0.0/9.png)<br/>
-> ![设置页](docs/1.0.0/10.png)<br/>
+> ![密码本类型](docs/1.0.8/6.png)<br/>
+> ![设置页](docs/1.0.8/8.png)<br/>
