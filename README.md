@@ -71,11 +71,9 @@ sudo fnpack build && sudo appcenter-cli install-local note.fpk
 > ![首页](docs/1.0.0/2.png)<br/>
 > ![便签类型](docs/1.0.8/2.png)<br/>
 > ![首页详情](docs/1.0.0/3.png)<br/>
-> ![移动端打开的详情页](docs/1.0.0/4.png)<br/>
 > ![首页详情页](docs/1.0.0/5.png)<br/>
 > ![首页详情](docs/1.0.0/6.png)<br/>
 > ![首页编辑模式绘画](docs/1.0.0/7.png)<br/>
 > ![添加便签页](docs/1.0.0/8.png)<br/>
-> ![首页展示绘画图](docs/1.0.0/9.png)<br/>
 > ![密码本类型](docs/1.0.8/6.png)<br/>
 > ![设置页](docs/1.0.8/8.png)<br/>
