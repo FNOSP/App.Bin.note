@@ -31,15 +31,12 @@
 &nbsp;7.密码本类型：<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;使用 AES-256-GCM 算法加密你的密码本内容，支持多个平台的账号保存<br/>
 它可以帮助你记录生活、工作和灵感。<br/>
-便签功能持续迭代中，欢迎来飞牛论坛给我建议反馈。<br/>
 默认账号：<b>admin</b> 密码：<b>123456</b>
 
 ## 应用状态
-> 迭代中
+> 初步完成开发
 
-> 待开发功能：
-
-> 导入、导出功能
+> 待定功能：
 
 > uniapp 版本 小程序、APP客户端开发 
 
@@ -69,7 +66,6 @@ sudo fnpack build && sudo appcenter-cli install-local note.fpk
 
 ### 功能图片
 > ![登录页](docs/1.0.0/0.png)<br/>
-> ![登录页](docs/1.0.0/1.png)<br/>
 > ![首页](docs/1.0.0/2.png)<br/>
 > ![首页详情](docs/1.0.0/3.png)<br/>
 > ![移动端打开的详情页](docs/1.0.0/4.png)<br/>
