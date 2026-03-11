@@ -1,0 +1,1 @@
+System.register(["./element-plus-legacy-DR7inLtN.js","./vendor-legacy-Dz-_UG3G.js","./vue-i18n-legacy-o1PnuMCO.js","./i18n-legacy-p1aOntXV.js"],function(e){var n;return{setters:[function(){},function(){},function(){},function(e){n=e.t}],execute:function(){e("default",n)}}});
