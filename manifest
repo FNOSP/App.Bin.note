@@ -1,13 +1,9 @@
 appname               = note
-version               = 1.0.8
+version               = 1.0.9
 display_name          = 便签
 desc                  = """
-<p><font color="red">╔════════ 🎆 🎇 ════════╗
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🎉 祝大家新年快乐 🎉
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💎 2026 有很多钱花 💎
-╚════════ 🎇 🎆 ════════╝</font></p>
-<p>一款简洁好用的 <b><i>便签</i></b> 应用，自适应网页，支持 PC 、平板、移动端放访问。</p>
-<p>支持多账号登录，每个账号都能有自己的数据空间。</p>
+<p>一款好用的 <b><i>便签</i></b> 应用。</p>
+<p><font color="blue">默认账号：<b>admin</b> 密码：<b>123456</b></font>。</p>
 <p>支持多类型的便签：</p>
 <p><font color="green">1.常规便签：</font><br/>可以输入各样式的文字、表格、图片上传、涂鸦、简单 Markdown</p>
 <p><font color="green">2.绘图便签：</font><br/>一个简单的绘画板</p>
@@ -17,8 +13,6 @@ desc                  = """
 <p><font color="green">6.附件类型便签：</font><br/>一些特别的附件文件保存到这里</p>
 <p><font color="green">7.位置类型：</font><br/>使用腾讯地图绘制记录你的位置轨迹</p>
 <p><font color="green">8.密码本类型：</font><br/>使用 AES-256-GCM 算法加密你的密码本内容，支持多个平台的账号保存</p>
-<p>它可以帮助你记录生活、工作和灵感。</p>
-<p><font color="blue">默认账号：<b>admin</b> 密码：<b>123456</b></font>。</p>
 <p><img width="80%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202511/28/042051izupqmsfwl0l4d0e.png"/></p>
 <p><img width="80%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202602/03/053354oq44mjqnqjp24zll.png"/></p>
 <p><img width="80%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202511/28/042135firrginarimmovr0.png"/></p>
@@ -30,7 +24,7 @@ desc                  = """
 <p><img width="80%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202602/03/052002plb72hh75746cb74.png"/></p>
 <p><img width="80%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202602/03/052002b9809r55d0zj8g80.png"/></p>
 """
-platform              = x86
+platform              = arm
 source                = thirdparty
 maintainer            = 左平
 maintainer_url        = https://club.fnnas.com/forum.php?mod=viewthread&tid=45704
@@ -44,23 +38,9 @@ service_port          = 10030
 checkport             = true
 disable_authorization_path = false
 changelog             = """
-1.编辑时增加自动保存功能<br/>
-2.编辑界面按钮加大<br/>
-3.大屏和小屏自定义分页大小<br/>
-4.增加账号登录或nas一键登录配置（待开放）<br/>
-5.增加拍照类型便签<br/>
-6.增加录音类型便签<br/>
-7.增加位置类型便签<br/>
-8.增加密码本类型便签<br/>
-9.添加允许访问的目录后自重启<br/>
-10.修复小概率异常退出数据库出现的 database disk image is malformed 损坏问题，开启 sqlite wal， 为了数据安全，建议常备份<br/>
-11.增加位置类型便签<br/>
-12.提升内网通讯安全，便签服务使用自签证书https运行，cgi->https://0.0.0.0:10030<br/>
-13.提升应用中心icon图标分辨率，改善应用中心应用应用详情图标模糊问题<br/>
-14.增加所有接口的安全性和必要的验证<br/>
-15.常规便签支持按Shift+Enter保持大小<br/>
-16.增加导出Markdown、html、png、pdf、svg的功能<br/>
-17.常规便签增加批量导入，多图导入功能<br/>
-18.左侧菜单显示效果优化<br/>
-19.其他优化<br/>
+1.优化首次打开便签速度<br/>
+2.常规便签图片支持设置宽度大小<br/>
+3.常规便签表格支持拖拽宽度<br/>
+4.增加便签历史数据记录显示<br/>
+5.其他优化<br/>
 """
