@@ -1,9 +1,8 @@
 appname               = note
-version               = 1.0.9
+version               = 1.1.0
 display_name          = 便签
 desc                  = """
-<p>一款好用的 <b><i>便签</i></b> 应用。</p>
-<p><font color="blue">默认账号：<b>admin</b> 密码：<b>123456</b></font>。</p>
+<p>一款好用的 <b><i>便签</i></b> 应用。自适应网页，支持导入导出（markdown、html、png、pdf），历史记录查看，可从 NAS 添加文件，支持 HTTPS，可从外部 10029 端口访问，可多用户登录，数据备份恢复，文件管理，功能丰富。</p>
 <p>支持多类型的便签：</p>
 <p><font color="green">1.常规便签：</font><br/>可以输入各样式的文字、表格、图片上传、涂鸦、简单 Markdown</p>
 <p><font color="green">2.绘图便签：</font><br/>一个简单的绘画板</p>
@@ -13,18 +12,17 @@ desc                  = """
 <p><font color="green">6.附件类型便签：</font><br/>一些特别的附件文件保存到这里</p>
 <p><font color="green">7.位置类型：</font><br/>使用腾讯地图绘制记录你的位置轨迹</p>
 <p><font color="green">8.密码本类型：</font><br/>使用 AES-256-GCM 算法加密你的密码本内容，支持多个平台的账号保存</p>
-<p><img width="80%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202511/28/042051izupqmsfwl0l4d0e.png"/></p>
-<p><img width="80%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202602/03/053354oq44mjqnqjp24zll.png"/></p>
-<p><img width="80%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202511/28/042135firrginarimmovr0.png"/></p>
-<p><img width="80%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202602/03/052002esrbyqq19k3qlpe1.png"/></p>
-<p><img width="80%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202602/03/052002r88owmcy7ouma7u0.png"/></p>
-<p><img width="80%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202511/28/042209d5olba5x42jk1ub1.png"/></p>
-<p><img width="80%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202511/28/042221wgwvvicg4gd43ati.png"/></p>
-<p><img width="80%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202602/03/052002f7o5ho7f5rd9rbzg.png"/></p>
-<p><img width="80%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202602/03/052002plb72hh75746cb74.png"/></p>
-<p><img width="80%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202602/03/052002b9809r55d0zj8g80.png"/></p>
+<p><font color="blue">默认账号：<b>admin</b> 密码：<b>123456</b></font>。</p>
+<p><font color="red">如果你觉得当前应用好用，请到应用详情页上方开发者中点击去支持我。</p>
+<p><font color="#742222ff">便签按任务通知功能开发中， app 准备开发中。</p>
+<p><img width="100%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202511/28/042051izupqmsfwl0l4d0e.png"/></p>
+<p><img width="100%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202602/03/053354oq44mjqnqjp24zll.png"/></p>
+<p><img width="100%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202511/28/042209d5olba5x42jk1ub1.png"/></p>
+<p><img width="100%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202511/28/042135firrginarimmovr0.png"/></p>
+<p><img width="100%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202603/24/172204f1ffbsz989ti6f1n.png"/></p>
+<p><img width="100%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202603/24/172204q3r38nd3e6oa88aa.png"/></p>
 """
-platform              = arm
+platform              = x86
 source                = thirdparty
 maintainer            = 左平
 maintainer_url        = https://club.fnnas.com/forum.php?mod=viewthread&tid=45704
@@ -38,9 +36,9 @@ service_port          = 10030
 checkport             = true
 disable_authorization_path = false
 changelog             = """
-1.优化首次打开便签速度<br/>
-2.常规便签图片支持设置宽度大小<br/>
-3.常规便签表格支持拖拽宽度<br/>
-4.增加便签历史数据记录显示<br/>
-5.其他优化<br/>
+1.上传文件支持从 NAS 添加<br/>
+2.允许访问目录扫描排除数据库文件，避免疯狂读盘问题<br/>
+3.新增 https://0.0.0.0:10029 外部直接访问服务，外部访问需要在设置中开启<br/>
+4.新增登录错误超过10次禁止10分钟登录防护<br/>
+5.用户列表中新增登录日志<br/>
 """

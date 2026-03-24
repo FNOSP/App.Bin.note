@@ -1,0 +1,1 @@
+function t(t){return d({url:"/admin/category/list",method:"post",data:t})}function a(t){return d({url:"/admin/category/del",method:"delete",data:t})}function r(t){return d({url:"/admin/category/add",method:"post",data:t})}function e(t){return d({url:"/admin/category/edit",method:"patch",data:t})}import{t as d}from"./request-DgEmi3I5.js";export{t as i,a as n,e as r,r as t};
