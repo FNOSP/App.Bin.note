@@ -1,0 +1,1 @@
+System.register(["./editor-legacy-DA964xXn.js"],function(e){var t,n;return{setters:[function(e){t=e.D,n=e.F}],execute:function(){e("TableRow",n),e("default",t)}}});

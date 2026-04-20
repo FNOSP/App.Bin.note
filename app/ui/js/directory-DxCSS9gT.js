@@ -1,1 +1,0 @@
-function t(){return e({url:"/admin/directory/fileScan",method:"post"})}function r(t){return e({url:"/admin/directory/fileList",method:"post",data:t})}function o(t){return e({url:"/admin/directory/uploadByUuid",method:"post",data:t})}import{t as e}from"./request-DgEmi3I5.js";export{r as n,o as r,t};

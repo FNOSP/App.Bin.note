@@ -1,20 +1,18 @@
 appname               = note
-version               = 1.1.0
+version               = 1.1.1
 display_name          = 便签
 desc                  = """
-<p>一款好用的 <b><i>便签</i></b> 应用。自适应网页，支持导入导出（markdown、html、png、pdf），历史记录查看，可从 NAS 添加文件，支持 HTTPS，可从外部 10029 端口访问，可多用户登录，数据备份恢复，文件管理，功能丰富。</p>
+<p>一款好用功能丰富的 <b><i>便签</i></b> 应用。自适应网页，支持导入导出，历史记录查看，可从 NAS 添加文件，支持 HTTPS，可从外部 10029 端口访问，可多用户登录，数据备份恢复，文件管理，功能丰富。</p>
 <p>支持多类型的便签：</p>
-<p><font color="green">1.常规便签：</font><br/>可以输入各样式的文字、表格、图片上传、涂鸦、简单 Markdown</p>
-<p><font color="green">2.绘图便签：</font><br/>一个简单的绘画板</p>
-<p><font color="green">3.思维导图便签：</font><br/>嵌入思维导图开源组件到系统中</p>
-<p><font color="green">4.拍照类型便签：</font><br/>可以把你拍照中最喜欢的几张图片保存到这里</p>
-<p><font color="green">5.录音类型便签：</font><br/>可以把你觉得有必要的音频保存到这里</p>
-<p><font color="green">6.附件类型便签：</font><br/>一些特别的附件文件保存到这里</p>
-<p><font color="green">7.位置类型：</font><br/>使用腾讯地图绘制记录你的位置轨迹</p>
-<p><font color="green">8.密码本类型：</font><br/>使用 AES-256-GCM 算法加密你的密码本内容，支持多个平台的账号保存</p>
+<p><font color="green">1.常规：</font><br/>可以输入各样式的文字、表格、图片上传、涂鸦、简单 Markdown、LaTeX 公式、Emoji 表情</p>
+<p><font color="green">2.绘图：</font><br/>一个简单的绘画板</p>
+<p><font color="green">3.思维导图：</font><br/>存你的思维导图</p>
+<p><font color="green">4.拍照：</font><br/>存你的图片</p>
+<p><font color="green">5.录音：</font><br/>存你的录音</p>
+<p><font color="green">6.附件：</font><br/>存你的附件文件</p>
+<p><font color="green">7.位置：</font><br/>记录你的路线规划</p>
+<p><font color="green">8.密码本：</font><br/>存你的密码，使用 AES-256-GCM 算法加密全部密码本内容</p>
 <p><font color="blue">默认账号：<b>admin</b> 密码：<b>123456</b></font>。</p>
-<p><font color="red">如果你觉得当前应用好用，请到应用详情页上方开发者中点击去支持我。</p>
-<p><font color="#742222ff">便签按任务通知功能开发中， app 准备开发中。</p>
 <p><img width="100%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202511/28/042051izupqmsfwl0l4d0e.png"/></p>
 <p><img width="100%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202602/03/053354oq44mjqnqjp24zll.png"/></p>
 <p><img width="100%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202511/28/042209d5olba5x42jk1ub1.png"/></p>
@@ -22,7 +20,7 @@ desc                  = """
 <p><img width="100%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202603/24/172204f1ffbsz989ti6f1n.png"/></p>
 <p><img width="100%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202603/24/172204q3r38nd3e6oa88aa.png"/></p>
 """
-platform              = x86
+platform              = arm
 source                = thirdparty
 maintainer            = 左平
 maintainer_url        = https://club.fnnas.com/forum.php?mod=viewthread&tid=45704
@@ -36,9 +34,8 @@ service_port          = 10030
 checkport             = true
 disable_authorization_path = false
 changelog             = """
-1.上传文件支持从 NAS 添加<br/>
-2.允许访问目录扫描排除数据库文件，避免疯狂读盘问题<br/>
-3.新增 https://0.0.0.0:10029 外部直接访问服务，外部访问需要在设置中开启<br/>
-4.新增登录错误超过10次禁止10分钟登录防护<br/>
-5.用户列表中新增登录日志<br/>
+1.常规便签添加代码块增加语言选择，预览时增加复制、语法高亮、行数。<br/>
+2.常规便签菜单栏移动端超出一行显示隐藏功能。<br/>
+3.常规便签内容支持 LaTeX 公式。<br/>
+4.常规便签内容支持 Emoji 。<br/>
 """

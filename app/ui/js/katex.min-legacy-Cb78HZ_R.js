@@ -1,0 +1,1 @@
+System.register(["./vendor-legacy-tjwudxwN.js"],function(){return{setters:[function(){}],execute:function(){}}});

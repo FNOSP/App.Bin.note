@@ -1,0 +1,1 @@
+System.register(["./element-plus-legacy-CN9Z1vai.js","./vue-core-legacy-q13tCd3f.js","./editor-legacy-DA964xXn.js","./ImageWithMenu-legacy-B2GiHQMl.js"],function(e){var t;return{setters:[function(){},function(){},function(){},function(e){t=e.t}],execute:function(){e("ImageWithMenu",t)}}});

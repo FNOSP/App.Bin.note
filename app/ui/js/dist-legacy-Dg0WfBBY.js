@@ -1,0 +1,1 @@
+System.register(["./editor-legacy-DA964xXn.js"],function(e){var t,n;return{setters:[function(e){t=e.C,n=e.E}],execute:function(){e("TaskList",n),e("default",t)}}});

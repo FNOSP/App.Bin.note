@@ -1,0 +1,1 @@
+System.register(["./element-plus-legacy-CN9Z1vai.js","./vue-core-legacy-q13tCd3f.js","./konva-legacy-ChfciAOl.js"],function(e){var n,t;return{setters:[function(){},function(e){n=e.c,t=e.s},function(){}],execute:function(){e("default",t),e("useImage",n)}}});
