@@ -1,0 +1,1 @@
+System.register(["./editor-legacy-DA964xXn.js"],function(e){var t,i,n,r;return{setters:[function(e){t=e.H,i=e.U,n=e.V,r=e.W}],execute:function(){e("Link",n),e("default",t),e("isAllowedUri",i),e("pasteRegex",r)}}});

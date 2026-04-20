@@ -1,0 +1,1 @@
+System.register(["./editor-legacy-DA964xXn.js","./TextStyleExtensions-legacy-Bo1zN3N_.js"],function(t){var e,n,r,i,o;return{setters:[function(){},function(t){e=t.a,n=t.i,r=t.n,i=t.r,o=t.t}],execute:function(){t("FontFamily",o),t("FontSize",r),t("Subscript",i),t("Superscript",n),t("TextBackgroundColor",e)}}});

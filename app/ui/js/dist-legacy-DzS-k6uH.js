@@ -1,0 +1,1 @@
+System.register(["./editor-legacy-DA964xXn.js"],function(e){var t,r;return{setters:[function(e){t=e.N,r=e.O}],execute:function(){e("TableHeader",t),e("default",r)}}});
