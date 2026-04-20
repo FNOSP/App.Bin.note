@@ -2,7 +2,7 @@
 
 > 应用包名：note <br/>
 > 显示名称：便签 <br/>
-> 版本：1.1.0 <br/>
+> 版本：1.1.1 <br/>
 > 发布者：左平 <br/>
 > 占用端口： 10030 （内部） 10029 （外部） <br/>
 > 前端开发：Vue3 + Element-Plus <br/>
@@ -13,24 +13,24 @@
 
 ## 应用说明
 
-> 一款好用的便签应用。自适应网页，支持导入导出（markdown、html、png、pdf），历史记录查看，可从 NAS 添加文件，支持 HTTPS，可从外部 10029 端口访问，可多用户登录，数据备份恢复，文件管理，功能丰富。<br/>
+> 一款好用功能丰富的便签应用。自适应网页，支持导入导出，历史记录查看，可从 NAS 添加文件，支持 HTTPS，可从外部 10029 端口访问，可多用户登录，数据备份恢复，文件管理，功能丰富。<br/>
 支持多类型的便签，<br/>
 &nbsp;1.常规便签：<br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;可以输入各样式的文字、表格、图片上传、涂鸦、简单Markdown<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;可以输入各样式的文字、表格、图片上传、涂鸦、简单Markdown、LaTeX 公式、Emoji 表情<br/>
 &nbsp;2.绘图便签：<br/>
     &nbsp;&nbsp;&nbsp;&nbsp;一个简单的绘画板<br/>
 &nbsp;3.思维导图便签：<br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;嵌入那款最火的思维导图开源组件到系统中<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;存你的思维导图<br/>
 &nbsp;4.拍照类型：<br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;可以把你拍照中最喜欢的几张图片保存到这里,轮播播放、列表、多宫格展示<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;存你的图片<br/>
 &nbsp;5.录音类型：<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;可以把你的需要单独保存的录音保存到这里，支持播放和可视化<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;存你的录音<br/>
 &nbsp;6.附件类型便签：<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;一些特别的附件文件保存到这里<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;存你的附件文件<br/>
 &nbsp;7.位置类型：<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;使用腾讯地图绘制记录你的位置轨迹<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;记录你的路线规划<br/>
 &nbsp;8.密码本类型：<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;使用 AES-256-GCM 算法加密你的密码本内容，支持多个平台的账号保存<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;存你的密码，使用 AES-256-GCM 算法加密全部密码本内容<br/>
 默认账号：<b>admin</b> 密码：<b>123456</b>
 
 ## 应用状态
@@ -38,7 +38,6 @@
 
 ## 支持我
 > ![支持我](docs/1.1.0/5.png)<br/>
-> 请支持我，继续开发更多功能。
 
 ## 飞牛论坛交流帖
 > https://club.fnnas.com/forum.php?mod=viewthread&tid=45704
@@ -61,6 +60,5 @@
 > ![首页](docs/1.0.0/2.png)<br/>
 > ![便签类型](docs/1.1.0/3.png)<br/>
 > ![首页详情](docs/1.0.0/3.png)<br/>
-> ![首页详情页](docs/1.0.0/5.png)<br/>
 > ![添加便签页](docs/1.0.0/8.png)<br/>
 > ![设置页](docs/1.1.0/4.png)<br/>
