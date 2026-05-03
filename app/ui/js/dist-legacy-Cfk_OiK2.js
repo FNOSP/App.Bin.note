@@ -1,1 +1,0 @@
-System.register(["./editor-legacy-DA964xXn.js"],function(e){var t,n;return{setters:[function(e){t=e.M,n=e.k}],execute:function(){e("TableCell",t),e("default",n)}}});

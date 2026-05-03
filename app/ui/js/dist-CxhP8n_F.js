@@ -1,1 +1,0 @@
-import{$ as a,G as s,J as t,K as e,Q as o,X as r,Y as d,Z as f,et as i,q as j}from"./editor-BIqORe9V.js";export{s as Emoji,e as EmojiSuggestionPluginKey,f as default,j as emojiToShortcode,t as emojis,d as gitHubCustomEmojis,r as gitHubEmojis,o as inputRegex,a as pasteRegex,i as shortcodeToEmoji};

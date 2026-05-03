@@ -1,1 +1,0 @@
-import{S as a,x as o}from"./editor-BIqORe9V.js";export{o as TextAlign,a as default};
