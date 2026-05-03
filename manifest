@@ -19,7 +19,7 @@ desc                  = """
 <p><img width="100%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202603/24/172204f1ffbsz989ti6f1n.png"/></p>
 <p><img width="100%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202603/24/172204q3r38nd3e6oa88aa.png"/></p>
 """
-platform              = x86
+platform              = arm
 source                = thirdparty
 maintainer            = 左平
 maintainer_url        = https://club.fnnas.com/forum.php?mod=viewthread&tid=45704

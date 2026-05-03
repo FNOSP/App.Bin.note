@@ -2,7 +2,7 @@
 
 > 应用包名：note <br/>
 > 显示名称：便签 <br/>
-> 版本：1.1.1 <br/>
+> 版本：1.1.2 <br/>
 > 发布者：左平 <br/>
 > 占用端口： 10030 （内部） 10029 （外部） <br/>
 > 前端开发：Vue3 + Element-Plus <br/>
@@ -13,14 +13,14 @@
 
 ## 应用说明
 
-> 一款好用功能丰富的便签应用。自适应网页，支持导入导出，历史记录查看，可从 NAS 添加文件，支持 HTTPS，可从外部 10029 端口访问，可多用户登录，数据备份恢复，文件管理，功能丰富。<br/>
-支持多类型的便签，<br/>
+> 一款功能丰富的便签应用。自适应网页，支持导入导出，历史记录，从 NAS 添加文件，外部 HTTPS 10029 端口访问，多用户登录，数据备份恢复，文件管理。<br/>
+支持多类型便签，<br/>
 &nbsp;1.常规便签：<br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;可以输入各样式的文字、表格、图片上传、涂鸦、简单Markdown、LaTeX 公式、Emoji 表情<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;可记录文字、表格、图片、涂鸦、Markdown、LaTeX 公式、Emoji 表情等内容<br/>
 &nbsp;2.绘图便签：<br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;一个简单的绘画板<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;自由的绘画板<br/>
 &nbsp;3.思维导图便签：<br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;存你的思维导图<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;设计你的思维导图<br/>
 &nbsp;4.拍照类型：<br/>
     &nbsp;&nbsp;&nbsp;&nbsp;存你的图片<br/>
 &nbsp;5.录音类型：<br/>
