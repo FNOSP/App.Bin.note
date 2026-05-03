@@ -1,0 +1,1 @@
+System.register(["./vendor-legacy-BAKhKzRs.js"],function(){return{setters:[function(){}],execute:function(){}}});

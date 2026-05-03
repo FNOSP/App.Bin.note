@@ -1,0 +1,1 @@
+function t(t){return r({url:"/admin/tag/list",method:"post",data:t})}function a(t){return r({url:"/admin/tag/del",method:"delete",data:t})}function d(t){return r({url:"/admin/tag/add",method:"post",data:t})}function n(t){return r({url:"/admin/tag/edit",method:"patch",data:t})}import{t as r}from"./request-S_dyH0P6.js";export{t as i,a as n,n as r,d as t};

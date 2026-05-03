@@ -1,0 +1,1 @@
+System.register(["./editor-legacy-CaFr6_KK.js"],function(e){var t,n,o,i,r,c,l;return{setters:[function(e){t=e.C,n=e.D,o=e.E,i=e.O,r=e.S,c=e.T,l=e.w}],execute:function(){e("BackgroundColor",r),e("Color",t),e("FontFamily",l),e("FontSize",c),e("LineHeight",o),e("TextStyle",n),e("TextStyleKit",i)}}});

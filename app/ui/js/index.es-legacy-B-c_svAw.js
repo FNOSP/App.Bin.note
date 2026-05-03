@@ -1,1 +1,0 @@
-System.register(["./element-plus-legacy-CN9Z1vai.js","./viewer-legacy-D2LhELh_.js"],function(e){var t,n,i,r,c;return{setters:[function(){},function(e){t=e.a,n=e.i,i=e.n,r=e.r,c=e.t}],execute:function(){e("Viewer",n.default),e("api",c),e("component",i),e("default",t),e("directive",r)}}});

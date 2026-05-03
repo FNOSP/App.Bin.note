@@ -1,12 +1,12 @@
 appname               = note
-version               = 1.1.1
+version               = 1.1.2
 display_name          = 便签
 desc                  = """
-<p>一款好用功能丰富的 <b><i>便签</i></b> 应用。自适应网页，支持导入导出，历史记录查看，可从 NAS 添加文件，支持 HTTPS，可从外部 10029 端口访问，可多用户登录，数据备份恢复，文件管理，功能丰富。</p>
-<p>支持多类型的便签：</p>
-<p><font color="green">1.常规：</font><br/>可以输入各样式的文字、表格、图片上传、涂鸦、简单 Markdown、LaTeX 公式、Emoji 表情</p>
-<p><font color="green">2.绘图：</font><br/>一个简单的绘画板</p>
-<p><font color="green">3.思维导图：</font><br/>存你的思维导图</p>
+<p>一款功能丰富的 <b><i>便签</i></b> 应用。自适应网页，支持导入导出，历史记录，从 NAS 添加文件，外部 HTTPS 10029 端口访问，多用户登录，数据备份恢复，文件管理。</p>
+<p>支持多类型便签：</p>
+<p><font color="green">1.常规：</font><br/>可记录文字、表格、图片、涂鸦、Markdown、LaTeX 公式、Emoji 表情等内容</p>
+<p><font color="green">2.绘图：</font><br/>自由的绘画板</p>
+<p><font color="green">3.思维导图：</font><br/>设计你的思维导图</p>
 <p><font color="green">4.拍照：</font><br/>存你的图片</p>
 <p><font color="green">5.录音：</font><br/>存你的录音</p>
 <p><font color="green">6.附件：</font><br/>存你的附件文件</p>
@@ -16,11 +16,10 @@ desc                  = """
 <p><img width="100%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202511/28/042051izupqmsfwl0l4d0e.png"/></p>
 <p><img width="100%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202602/03/053354oq44mjqnqjp24zll.png"/></p>
 <p><img width="100%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202511/28/042209d5olba5x42jk1ub1.png"/></p>
-<p><img width="100%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202511/28/042135firrginarimmovr0.png"/></p>
 <p><img width="100%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202603/24/172204f1ffbsz989ti6f1n.png"/></p>
 <p><img width="100%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202603/24/172204q3r38nd3e6oa88aa.png"/></p>
 """
-platform              = arm
+platform              = x86
 source                = thirdparty
 maintainer            = 左平
 maintainer_url        = https://club.fnnas.com/forum.php?mod=viewthread&tid=45704
@@ -34,8 +33,6 @@ service_port          = 10030
 checkport             = true
 disable_authorization_path = false
 changelog             = """
-1.常规便签添加代码块增加语言选择，预览时增加复制、语法高亮、行数。<br/>
-2.常规便签菜单栏移动端超出一行显示隐藏功能。<br/>
-3.常规便签内容支持 LaTeX 公式。<br/>
-4.常规便签内容支持 Emoji 。<br/>
+1.修复常规便签从网页中复制粘贴内容不显示问题。<br/>
+2.常规便签支持粘贴图片。
 """

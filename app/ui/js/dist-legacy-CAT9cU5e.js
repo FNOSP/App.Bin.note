@@ -1,1 +1,0 @@
-System.register(["./editor-legacy-DA964xXn.js"],function(t){var e,n;return{setters:[function(t){e=t.nt,n=t.tt}],execute:function(){t("Color",e),t("default",n)}}});
