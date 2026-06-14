@@ -1,1 +1,0 @@
-System.register(["./viewer-legacy-C8huggsu.js"],function(){return{setters:[function(){}],execute:function(){}}});

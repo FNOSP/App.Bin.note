@@ -1,1 +1,0 @@
-System.register(["./editor-legacy-CaFr6_KK.js","./TextStyleExtensions-legacy-B_rP22L2.js"],function(t){var e,n,r,i,o;return{setters:[function(){},function(t){e=t.a,n=t.i,r=t.n,i=t.r,o=t.t}],execute:function(){t("FontFamily",o),t("FontSize",r),t("Subscript",i),t("Superscript",n),t("TextBackgroundColor",e)}}});

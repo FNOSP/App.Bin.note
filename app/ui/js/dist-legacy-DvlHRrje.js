@@ -1,1 +1,0 @@
-System.register(["./editor-legacy-CaFr6_KK.js"],function(e){var t,i,n,r;return{setters:[function(e){t=e.J,i=e.K,n=e.Y,r=e.q}],execute:function(){e("Link",i),e("default",r),e("isAllowedUri",t),e("pasteRegex",n)}}});

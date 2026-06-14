@@ -1,1 +1,0 @@
-System.register(["./editor-legacy-CaFr6_KK.js"],function(e){var t,n;return{setters:[function(e){t=e.A,n=e.k}],execute:function(){e("TextAlign",n),e("default",t)}}});

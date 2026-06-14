@@ -1,1 +1,0 @@
-System.register(["./request-legacy-Du9KBoPn.js"],function(t){var e;return t({n:function(t){return e({url:"/admin/directory/fileList",method:"post",data:t})},r:function(t){return e({url:"/admin/directory/uploadByUuid",method:"post",data:t})},t:function(){return e({url:"/admin/directory/fileScan",method:"post"})}}),{setters:[function(t){e=t.t}],execute:function(){}}});
