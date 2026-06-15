@@ -1,13 +1,8 @@
 # App.Bin.note
 
-> 应用包名：note <br/>
-> 显示名称：便签 <br/>
-> 版本：1.1.5 <br/>
+> 名称：便签 <br/>
+> 版本：1.2.0 <br/>
 > 发布者：左平 <br/>
-> 占用端口： 10030 （内部） 10029 （外部） <br/>
-> 前端开发：Vue3 + Element-Plus <br/>
-> 后端开发：Go + Gin <br/>
-> 数据库： Sqlite <br/>
 
 ## 应用说明
 
@@ -26,7 +21,7 @@
 &nbsp;6.附件类型便签：<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;存你的附件文件<br/>
 &nbsp;7.位置类型：<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;记录你的路线规划<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;记录你的路线规划（即将下线）<br/>
 &nbsp;8.密码本类型：<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;存你的密码，使用 AES-256-GCM 算法加密全部密码本内容<br/>
 默认账号：<b>admin</b> 密码：<b>123456</b>

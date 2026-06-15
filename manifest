@@ -1,5 +1,5 @@
 appname               = note
-version               = 1.1.5
+version               = 1.2.0
 display_name          = 便签
 desc                  = """
 <p>一款功能丰富的 <b><i>便签</i></b> 应用。自适应网页，支持导入导出，历史记录，从 NAS 添加文件，外部 HTTPS 10029 端口访问，多用户登录，数据备份恢复，文件管理，内容分享，回收站。</p>
@@ -23,22 +23,27 @@ maintainer            = 左平
 maintainer_url        = https://club.fnnas.com/forum.php?mod=viewthread&tid=45704
 distributor           = 左平
 distributor_url       = https://club.fnnas.com/forum.php?mod=viewthread&tid=45704
-os_min_version        = 1.1.8
+os_min_version        = 1.1.3100
 ctl_stop              = true
 desktop_uidir         = ui
 desktop_applaunchname = note.Application
-service_port          = 10030
+service_port          = 10029
 checkport             = true
 disable_authorization_path = false
 changelog             = """
-1.便签增加字号大小设置
-2.便签增加行高设置
-3.大屏打开时，左侧列表固定
+1.常规便签增加字号大小设置
+2.常规便签增加行高设置
+3.大屏打开时，左侧列表固定，右侧内容多左侧不跟着滚动
 4.支持历史数据搜索
-5.便签颜色选择支持历史记录
-6.菜单增加安全推出按钮
-7.登录增加保持登录功能
-8.新增回收站功能
-9.新增分享功能
-10.其他优化
+5.增加常规便签文字颜色和背景颜色选中后历史颜色记录功能
+6.左侧增加安全推出按钮
+7.登录增加保持登录功能，勾选一直可登录，不勾选关闭浏览器自动退出登录
+8.增加回收站功能
+9.增加分享功能，支持限时、密码分享
+10.移除离线IP定位库等一些不必要的功能，减少应用大小，提高应用响应速度
+11.升级前后端所有组件包到最新版本
+12.内部通讯去除cgi，释放10030端口，升级最新的sock通讯
+13.外部 10029 端口访问支持了http1.1/2/3
+14.修复便签自动提交导致的光标换行问题
+15.其他问题修复和优化
 """
