@@ -2,7 +2,7 @@ appname               = note
 version               = 1.2.0
 display_name          = 便签
 desc                  = """
-<p>一款功能丰富的 <b><i>便签</i></b> 应用。自适应网页，支持导入导出，历史记录，从 NAS 添加文件，外部 HTTPS 10029 端口访问，多用户登录，数据备份恢复，文件管理，收藏，内容分享，回收站。</p>
+<p>一款功能丰富的 <b><i>便签</i></b> 应用。自适应网页，支持导入导出，历史记录，外部 HTTPS 10029 端口访问，多用户，数据备份恢复，分类，标签，文件管理，收藏，内容分享，回收站。</p>
 <p>支持多类型便签：</p>
 <p><font color="green">1.常规：</font><br/>可记录文字、表格、图片、涂鸦、Markdown、LaTeX 公式、Emoji 表情等内容</p>
 <p><font color="green">2.绘图：</font><br/>自由的绘画板</p>
@@ -13,9 +13,10 @@ desc                  = """
 <p><font color="green">7.位置：</font><br/>记录你的路线规划</p>
 <p><font color="green">8.密码本：</font><br/>存你的密码，使用 AES-256-GCM 算法加密全部密码本内容</p>
 <p><font color="blue">默认账号：<b>admin</b> 密码：<b>123456</b></font>。</p>
-<p><img width="100%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202602/03/053354oq44mjqnqjp24zll.png"/></p>
-<p><img width="100%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202603/24/172204f1ffbsz989ti6f1n.png"/></p>
-<p><img width="100%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202603/24/172204q3r38nd3e6oa88aa.png"/></p>
+<p><img width="100%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202606/29/172159m0o8t8l8800aa8eo.png"/></p>
+<p><img width="100%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202606/29/172206x8zmu7eee7ssxoez.png"/></p>
+<p><img width="100%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202606/29/172303nuxmkie7b7quuw2c.pngg"/></p>
+<p><img width="100%" height="auto" src="https://club.fnnas.com/data/attachment/forum/202606/29/172250b678wsz7jj4tstw0.png"/></p>
 """
 platform              = x86
 source                = thirdparty
@@ -49,7 +50,7 @@ changelog             = """
 16.首页增加详情操作面板
 17.设置中增加了版本更新提示，手动下载安装，需要能访问github
 18.便签列表每个便签支持自定义背景色
-19.增加重置admin密码的功能，命令：./note -passwd 123456
+19.增加重置admin密码的功能
 20.分包异步加载，优化首次打开速度
 21.增加收藏功能
 22.其他问题修复和优化
