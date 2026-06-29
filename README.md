@@ -37,7 +37,6 @@
 > ![登录页](docs/1.0.0/app_center_install_fpk.jpg)<br/>
 
 ### 功能图片
-> ![首页](docs/1.0.0/2.png)<br/>
-> ![便签类型](docs/1.1.0/3.png)<br/>
-> ![添加便签页](docs/1.0.0/8.png)<br/>
-> ![设置页](docs/1.1.0/4.png)<br/>
+> ![首页](docs/1.2.0/1.png)<br/>
+> ![便签类型](docs/1.2.0/6.png)<br/>
+> ![设置页](docs/1.2.0/7.png)<br/>
