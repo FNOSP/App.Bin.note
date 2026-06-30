@@ -37,8 +37,8 @@
 > ![登录页](docs/1.0.0/app_center_install_fpk.jpg)<br/>
 
 ## Docker版本
-> https://hub.docker.com/r/zuoping1/note
-> docker pull zuoping1/note:latest
+> https://hub.docker.com/r/zuoping1/note<br/>
+> docker pull zuoping1/note:latest<br/>
 
 ### 功能图片
 > ![首页](docs/1.2.0/1.png)<br/>
