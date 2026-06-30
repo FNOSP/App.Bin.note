@@ -36,6 +36,9 @@
 > 先下载 note.fpk 文件，然后在应用中心手动安装 <br/><br/>
 > ![登录页](docs/1.0.0/app_center_install_fpk.jpg)<br/>
 
+## Docker版本
+
+
 ### 功能图片
 > ![首页](docs/1.2.0/1.png)<br/>
 > ![编辑](docs/1.2.0/2.png)<br/>
