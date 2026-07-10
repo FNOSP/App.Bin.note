@@ -3,6 +3,7 @@
 > 名称：便签 <br/>
 > 版本：1.2.0 <br/>
 > 发布者：左平 <br/>
+> 要求系统最底版本：1.1.3100
 
 ## 应用说明
 
@@ -25,9 +26,6 @@
 &nbsp;8.密码本类型：<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;存你的密码，使用 AES-256-GCM 算法加密全部密码本内容<br/>
 默认账号：<b>admin</b> 密码：<b>123456</b>
-
-## 支持我
-> ![支持我](docs/1.1.0/5.png)<br/>
 
 ## 更多详情查看飞牛论坛交流帖
 > https://club.fnnas.com/forum.php?mod=viewthread&tid=45704
