@@ -5,7 +5,7 @@
 > 一款功能丰富的便签应用。自适应网页，支持导入导出，历史记录，从 NAS 添加文件，外部 HTTPS 10029 端口访问，多用户登录，数据备份恢复，文件管理，内容分享，回收站。<br/>
 支持多类型便签，<br/>
 &nbsp;1.常规便签：<br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;可记录文字、表格、图片、涂鸦、Markdown、LaTeX 公式、Emoji 表情等内容<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;可记录文字、图片内容<br/>
 &nbsp;2.绘图便签：<br/>
     &nbsp;&nbsp;&nbsp;&nbsp;自由的绘画板<br/>
 &nbsp;3.思维导图便签：<br/>
