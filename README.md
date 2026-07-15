@@ -28,8 +28,8 @@
 > docker pull zuoping1/note:latest<br/>
 
 ## 在你的 Linux 服务器中部署
-下载仓库目录中app/server/中的 note 二进制文件，上传到你的服务器，服务器开放 10029端口访问。
-运行 x86/amd64 的 note：
-> chmod +x note
-> chown www:www note
+下载仓库目录中app/server/中的 note 二进制文件，上传到你的服务器，服务器开放 10029端口访问。<br/>
+运行 x86/amd64 的 note：<br/>
+> chmod +x note <br/>
+> chown www:www note <br/>
 > ./note
