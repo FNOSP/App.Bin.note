@@ -4,7 +4,7 @@ LOG_FILE="${TRIM_PKGVAR}/info.log"
 PID_FILE="${TRIM_PKGVAR}/app.pid"
 
 # write the command to start your program here
-CMD="${TRIM_APPDEST}/server/note -data-path=${TRIM_PKGHOME} -data-share-paths=${TRIM_DATA_ACCESSIBLE_PATHS} -data-version=${TRIM_APPVER} -data-sock-path=${TRIM_APPDEST}"
+CMD="${TRIM_APPDEST}/server/note -data-path=${TRIM_PKGHOME} -data-share-paths=${TRIM_DATA_ACCESSIBLE_PATHS} -data-version=${TRIM_APPVER} -data-sock-path=${TRIM_APPDEST} -data-env=fn"
 
 log_msg() {
     echo "$(date '+%Y-%m-%d %H:%M:%S') - $1" >> ${LOG_FILE}
