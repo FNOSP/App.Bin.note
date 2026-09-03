@@ -2,7 +2,7 @@ appname               = note
 version               = 1.2.1
 display_name          = 便签
 desc                  = """
-<p>一款功能丰富的 <b><i>便签</i></b> 应用。支持自适应网页，导入导出，历史记录，外部 HTTPS 10029 端口访问，多用户，数据备份恢复，分类，标签，文件管理，收藏，内容分享，回收站，通知提醒。</p>
+<p>一款功能丰富的 <b><i>便签</i></b> 应用。</p>
 <p>支持多类型便签：</p>
 <p><font color="green">1.常规：</font><br/>可记录文字、表格、图片、涂鸦、Markdown、LaTeX 公式、Emoji 表情等内容</p>
 <p><font color="green">2.绘图：</font><br/>自由的绘画板</p>
