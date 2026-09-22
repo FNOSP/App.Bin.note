@@ -35,7 +35,7 @@ USER note
 # 声明需要挂载的卷
 VOLUME ["/app/data", "/app/uploads", "/app/backup"]
 
-EXPOSE 10029
+EXPOSE 10029 10030
 
 # 设置环境变量默认值
 ENV DATA_SHARE_PATHS=""
