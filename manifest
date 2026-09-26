@@ -1,5 +1,5 @@
 appname               = note
-version               = 1.2.3
+version               = 1.2.5
 display_name          = 便签
 desc                  = """
 <p>一款功能丰富的 <b><i>便签</i></b> 应用。</p>
@@ -28,8 +28,5 @@ service_port          = 10029
 checkport             = true
 disable_authorization_path = false
 changelog             = """
-1.MCP 支持。
-2.常规便签支持模板。
-3.设备管理。
-4.其他优化
+1.优化常规便签编辑器移动端体验，增加清空和全屏功能。
 """
