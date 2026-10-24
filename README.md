@@ -30,7 +30,7 @@
 > docker pull zuoping1/note:latest<br/>
 
 ## 在你的 Linux 服务器中部署
-下载仓库 https://github.com/FNOSP/App.Bin.note/app/server/note 中的二进制文件，上传到你的服务器，服务器开放 10029 端口或宝塔反代到 https://127.0.0.1:10029 访问。<br/>
+下载仓库 /app/server/note 中的二进制文件，上传到你的服务器，服务器开放 10029 端口或宝塔反代到 https://127.0.0.1:10029 访问。<br/>
 运行 x86/amd64 的 note：<br/>
 > chmod 755 note <br/>
 > chown www:www note <br/>
