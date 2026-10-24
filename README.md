@@ -1,7 +1,7 @@
 ## 应用说明
 > App.Bin.note <br/>
 > 名称：便签 <br/>
-> 版本：1.2.3 <br/>
+> 版本：1.2.5 <br/>
 > 一款功能丰富的便签应用。<br/>
 支持多类型便签，<br/>
 &nbsp;1.常规便签：<br/>
@@ -30,7 +30,7 @@
 > docker pull zuoping1/note:latest<br/>
 
 ## 在你的 Linux 服务器中部署
-下载仓库 https://github.com/FNOSP/App.Bin.note 目录中 app/server/note 中的二进制文件，上传到你的服务器，服务器开放 10029 端口或宝塔反代到 https://127.0.0.1:10029 访问。<br/>
+下载仓库 https://github.com/FNOSP/App.Bin.note/app/server/note 中的二进制文件，上传到你的服务器，服务器开放 10029 端口或宝塔反代到 https://127.0.0.1:10029 访问。<br/>
 运行 x86/amd64 的 note：<br/>
 > chmod 755 note <br/>
 > chown www:www note <br/>
